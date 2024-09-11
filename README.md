@@ -23,3 +23,10 @@ rm -rf kind
 After running the above script, the kind command will be available on your system.
 
 To verify the installation, run:
+```bash
+kind --version
+```
+Expected output:
+```bash
+kind version 0.20.0
+
