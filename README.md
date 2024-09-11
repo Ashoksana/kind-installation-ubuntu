@@ -11,7 +11,7 @@ In this guide, we will walk through the process of setting up a multi-node Kind 
 
 Execute the script below on the host to install the `kind` command. This script is based on the official Kind installation.
 
-bash
+```bash
 
 #!/bin/bash
 
@@ -24,12 +24,12 @@ rm -rf kind
 After running the above script, the kind command will be available on your system.
 
 To verify the installation, run:
-bash
+```bash
 
 kind --version
 
 Expected output:
-bash
+```bash
 
 kind version 0.20.0
 Bringing Up a Multi-Node Cluster
