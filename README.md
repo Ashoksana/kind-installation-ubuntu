@@ -19,3 +19,7 @@ Execute the script below on the host to install the `kind` command. This script 
 chmod +x ./kind
 sudo cp ./kind /usr/local/bin/kind
 rm -rf kind
+```
+After running the above script, the kind command will be available on your system.
+
+To verify the installation, run:
