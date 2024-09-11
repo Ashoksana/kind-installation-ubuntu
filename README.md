@@ -12,6 +12,7 @@ In this guide, we will walk through the process of setting up a multi-node Kind 
 Execute the script below on the host to install the `kind` command. This script is based on the official Kind installation.
 
 bash
+
 #!/bin/bash
 
 # For AMD64 / x86_64
@@ -24,17 +25,16 @@ After running the above script, the kind command will be available on your syste
 
 To verify the installation, run:
 bash
+
 kind --version
 
 Expected output:
-
 bash
-Copy code
+
 kind version 0.20.0
 Bringing Up a Multi-Node Cluster
 Create the Kind Cluster Configuration
 Create a file named config.yml with the following content:
-
 yaml
 # 4 node (3 workers) cluster config
 kind: Cluster
@@ -52,8 +52,8 @@ Start the Cluster
 Use the following command to start the multi-node Kind cluster using the config file:
 
 bash
-kind create cluster --config=config.yml
 
+kind create cluster --config=config.yml
 Expected output:
 bash
 Creating cluster "kind" ...
@@ -79,8 +79,8 @@ Using Kubectl:
 To check the cluster info using kubectl:
 
 bash
-kubectl cluster-info
 
+kubectl cluster-info
 Expected output:
 bash
 Kubernetes control plane is running at https://127.0.0.1:41273
